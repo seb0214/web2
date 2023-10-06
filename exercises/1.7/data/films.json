@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Avatar 2",
+        "duration": 200,
+        "budget": 200000000,
+        "link": "forkeokr"
+    },
+    {
+        "id": 2,
+        "title": "Le labyrinthe",
+        "duration": 113,
+        "budget": 34000000,
+        "link": "https://www.imdb.com/title/tt1790864/"
+    },
+    {
+        "id": 3,
+        "title": "Spider-man : No Way Home",
+        "duration": 148,
+        "budget": 200000000,
+        "link": "https://www.imdb.com/title/tt10872600/"
+    }
+]

@@ -3,7 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "debug": "nodemon ./bin/www",
+    "dev": "nodemon ./bin/www",
     "start": "node ./bin/www"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

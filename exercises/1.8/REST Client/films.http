@@ -1,0 +1,43 @@
+### Read all movies with File variable
+@baseUrl = http://localhost:3000
+GET {{baseUrl}}/films
+
+### Read all movies in function of minimum-duration
+
+GET {{baseUrl}}/films/?minimum-duration=120
+
+### Read one movie identifies by an id
+GET {{baseUrl}}/films/2
+
+### Create a new movie
+POST {{baseUrl}}/films
+Content-Type: application/json
+
+{
+    "title":"blablabla",
+    "duration":100,
+    "budget":1000000,
+    "link":"link"
+}
+
+### Delete a movie
+DELETE {{baseUrl}}/films/4
+
+### update one or many properties of movie founded by id
+PATCH {{baseUrl}}/films/1
+Content-Type: application/json
+
+{
+    "title":"Avatar"
+}
+
+### update all properties of movie or create a new movie if id isn't founded
+PUT {{baseUrl}}/films/1
+Content-Type: application/json
+
+{
+    "title":"Avatar 2",
+    "duration":200,
+    "budget":200000000,
+    "link":"forkeokr"
+}

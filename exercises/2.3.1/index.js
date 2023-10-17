@@ -1,7 +1,9 @@
-let souhait = document.querySelector(".souhait");
-let formulaire = document.querySelector("form");
-let valeurSouhait = document.querySelector(".valeurSouhait");
+const souhait = document.querySelector("#souhait");
+const formulaire = document.querySelector("form");
+const valeurSouhait = document.querySelector("#valeurSouhait");
 
 formulaire.addEventListener("submit", (e) => {
-    
-})
+    e.preventDefault();
+    formulaire.style.display = 'none';
+    valeurSouhait.innerHTML = `${souhait.value}`;
+});
